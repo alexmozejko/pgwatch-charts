@@ -1,5 +1,5 @@
 {{ if .Values.grafana.enabled }}
-{{ range $path, $_ :=  .Files.Glob  (printf "grafana_dashboards/%s/v%s/**.json" (include "pgwatch2-storage" .) (substr 0 1 .Subcharts.grafana.Chart.AppVersion)) }}
+{{ range $path, $_ :=  .Files.Glob  (printf "grafana_dashboards/postgres/v8/**.json") }}
 ---
 apiVersion: v1
 kind: ConfigMap
