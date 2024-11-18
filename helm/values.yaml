@@ -81,6 +81,7 @@ influxdb:
 
 webui:
   enabled: true
+  env: {}
   service:
     enabled: True
     port: 80
